@@ -36,7 +36,7 @@ jobs:
     
     # Подменяем дату (обновляем манифест)
     - name: Insert release date
-      run: 'sed -i "s/release-date: .*$/release-date: s`date +%s`/g" ./server-k8s-manifests/devops-psu.yml'
+      run: 'sed -i "s/release-date: .*$/release-date: s`date +%s`/g" ./server-k8s-manifests/app.yml'
 
     # Сохраняем изменения манифеста в ветке release
     - name: Commit manifest
