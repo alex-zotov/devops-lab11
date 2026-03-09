@@ -31,3 +31,12 @@ ssh-keygen -l -f ~/.ssh/id_ed25519.pub
 ![key-hash](./pic/key-hash.png)
 
 ### Создаём пустой репозиторий
+
+### Приложение
+[applicattion.py](./server/application.py) - веб сервер. по умолчанию показывает список файло текущего каталога
+
+[test_application.py](./server/test_application.py) - юнит тесты. Тестируем методы класса TestMe из applicattion.py. Используем библиотеку PyTest
+
+[requirements.txt](./requirements.txt) - файл зависимостей
+
+[dockerfile](./server/dockerfile) - файл для сборки образа
