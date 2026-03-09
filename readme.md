@@ -40,3 +40,21 @@ ssh-keygen -l -f ~/.ssh/id_ed25519.pub
 [requirements.txt](./requirements.txt) - файл зависимостей
 
 [dockerfile](./server/dockerfile) - файл для сборки образа
+
+### проверим git
+настроил чтоб все изменения уходили по ssh
+```
+git remote -v
+git remote set-url origin git@github.com:alex-zotov/devops-lab11.git
+```
+![git-remote](./pic/git-remote.png)
+
+```
+git status
+```
+-a добавил все изменения в commit (-m коммент)
+```
+git commit -a -m server
+git push
+```
+
