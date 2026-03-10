@@ -4,7 +4,7 @@ metadata:
   name: devops-psu
   labels:
     app: devops-psu
-    release-date: RELEASE-DATE
+    release-date: s1773160609
   namespace: devops-psu
 spec:
   replicas: 1
@@ -18,7 +18,7 @@ spec:
         svc: frontend
         # CI пайплайн будет подставлять новое значение,
         # чтобы ArgoCD «увидел» изменение манифеста
-        release-date: RELEASE-DATE
+        release-date: s1773160609
     spec:
       containers:
       - name: devops-psu-server
